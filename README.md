@@ -25,6 +25,6 @@ To launch a Python program from the command line, follow these steps:
 
 	-- If "py" does not work, try "python" and "python3".
 
-	Ex: "cd math_helper.py"
+	Ex: "py math_helper.py"
 
 
