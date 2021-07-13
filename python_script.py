@@ -85,6 +85,9 @@ print(a_list[1])
 print(a_list[7])
 print(a_list[8])
 
+# Python supports list "slicing", using which we can access a subset of a list.
+print("The second to fifth element in a_list is", a_list[1:6])
+
 # Python also supports negative indexing
 # Negative indecis start at -1 (last element) and go to -[length of the list]
 print(a_list[-9])
@@ -163,3 +166,17 @@ pi = 3.14159
 e = 2.71828
 one = 1
 print("The smallest of pi, e, and 1 is", find_smallest(pi, e, one))
+
+
+# A nice feature of Python is that arguments can have default values.
+# In this case, the argument "base" will, if not set when the function is called,
+# assume the value 2.71828
+def exponentiate(power,base = 2.71828):
+	return base ** power
+
+print("e^2 is", exponentiate(2))
+print("4^3 is", exponentiate(4, 3))
+# Also, arguments can, instead of being supplied in a specific order,
+# be set like so:
+print("7^4 is", exponentiate(4, base = 7))
+print("4^2 is", exponentiate(base = 7, power = 2))
