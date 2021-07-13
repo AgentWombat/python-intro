@@ -5,7 +5,7 @@ This demo will walk you through how to code a simple program using stock Python 
 
 python_script.py contains a basic introduction to Python.
 
-math_helper.py is a demo program which uses the basic concepts covered in intro.py.
+math_helper.py is a demo program which uses the basic concepts covered in python_script.py.
 
 To launch a Python program from the command line, follow these steps:
 
