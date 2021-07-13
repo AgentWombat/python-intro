@@ -118,6 +118,21 @@ for element in a_list:
 for McDonalds in a_list:
 	print(McDonalds)
 
+
+print("--DICTIONARIES--")
+
+# Dictionaryies can map keys to values.
+letter_to_num = {"a": 0, "b": 1, "c": 2, "d": 3}
+
+print(letter_to_num)
+
+print("letter_to_num['a'] =", letter_to_num['a'])
+
+# Dictionaries can be used in for loops
+for key in letter_to_num:
+	print("letter_to_num['" + key + "'] =", letter_to_num[key])
+
+
 print("--FUNCTIONS--")
 # Functions are bits of code that can be defined and then called
 # later. Functions must be defined before they are called.
