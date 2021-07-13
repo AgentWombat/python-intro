@@ -157,5 +157,9 @@ def find_smallest(a,b,c):
 	if c <= a and c <= b:
 		return c 
 
-print("The smallest of 31415, 2.71828, and 1 is", find_smallest(31415, 2.71828, 1))
 print("The smallest of 4, 90, and 10 is", find_smallest(4, 90, 10))
+
+pi = 3.14159
+e = 2.71828
+one = 1
+print("The smallest of pi, e, and 1 is", find_smallest(pi, e, one))
