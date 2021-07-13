@@ -71,6 +71,7 @@ num_plus_gr = user_input + 1.618
 print("your number plus 1.618 is " + str(num_plus_gr))
 
 # list can hold a assortments of wonderful informations
+print("--LIST--")
 a_list = [1, 2, 3, 4, "I", "declare", "a", "thumb", "war"]
 print(a_list)
 length = len(a_list)
@@ -78,6 +79,7 @@ print("The list has", length, "elements." )
 
 # To access information in a list, we must subscript the list using '[]'
 # The list indices start at 0 and go up to [length of the list] - 1
+print("--INDEXING--")
 print(a_list[0])
 print(a_list[1])
 print(a_list[7])
@@ -90,7 +92,10 @@ print(a_list[-8])
 print(a_list[-2])
 print(a_list[-1])
 
-# While loops repeat code while a certain condition is met
+# A while-loops repeats code inside itself while a certain condition is met.
+# Code is considered inside a while loop if it is indented under the
+# while-loop. The below while loop will run as long as variable 'i' is less than
+# the length of 'a_list'
 print("--WHILE LOOP--")
 i = 0
 while i < len(a_list):
@@ -102,9 +107,55 @@ while i < len(a_list):
 # Everything inside of a for-loop is repeated for each element in
 # a list (or other iterable data structure). At each iteration,
 # the iterating variable references the next element in the list.
+# Code inside a for loop must be indented.
 print("--FOR LOOPS--")
 for element in a_list:
 	print(element)
 
 for McDonalds in a_list:
 	print(McDonalds)
+
+print("--FUNCTIONS--")
+# Functions are bits of code that can be defined and then called
+# later. Functions must be defined before they are called.
+
+def say_hi():
+
+	print("Hi! (from a function)")
+
+print("The functions code does not actually run until we call it.")
+
+# Here we will call the function:
+say_hi()
+say_hi()
+say_hi()
+
+# Function arguments allow functions to be more dynamic
+
+def welcome(name):
+	print("Hello, " + name + "!")
+
+welcome("Matthew")
+welcome("Mark")
+welcome("Luke")
+
+# Functions can also return values.
+
+def square(a):
+	return a * a
+
+twelve_squared = square(12)
+print("Twelve squared is", twelve_squared)
+
+
+def find_smallest(a,b,c):
+
+	if a <= b and a <= c:
+		return a
+	if b <= a and b <= c:
+		return b
+	if c <= a and c <= b:
+		return c 
+
+print("The smallest of 31415, 2.71828, and 1 is", find_smallest(31415, 2.71828, 1))
+print("The smallest of 4, 90, and 10 is", find_smallest(4, 90, 10))
