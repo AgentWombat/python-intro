@@ -141,7 +141,7 @@ def say_hi():
 
 	print("Hi! (from a function)")
 
-print("The functions code does not actually run until we call it.")
+print("The function's code does not actually run until we call it.")
 
 # Here we will call the function:
 say_hi()
